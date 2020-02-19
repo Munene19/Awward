@@ -8,11 +8,11 @@ from . import views
 urlpatterns=[
     url(r'^admin/', admin.site.urls),
     url('', views.home, name='home'),
-    url(r'^project/<int:pk>/', ProjectDetailView.as_view(), name='project-detail'),
-    url(r'^project/new/', ProjectCreateView.as_view(), name='project-create'),
-    url(r'^project/<int:pk>/update/', ProjectUpdateView.as_view(), name='project-update'),
-    url(r'^api/profiles/', views.ProfileList.as_view()),
-    url(r'^api/projects/', views.ProjectList.as_view()),
+    url(r'^project/<int:pk>/', views.ProjectDetailView, name='project-detail'),
+    url(r'^project/new/', views.ProjectCreateView, name='project-create'),
+    url(r'^project/<int:pk>/update/', views.ProjectUpdateView, name='project-update'),
+    url(r'^api/profiles/', views.ProfileList),
+    url(r'^api/projects/', views.ProjectList),
     url(r'^vote/<project/<int:pk/',views.vote, name='vote'),
     url(r'^search/',views.search_project, name='search_project'),
 ]
