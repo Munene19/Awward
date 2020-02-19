@@ -2,7 +2,6 @@ from django.conf.urls import url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
-from django.urls import path
 from .views import ProjectDetailView, ProjectListView, ProjectCreateView, ProjectUpdateView
 from . import views 
 
