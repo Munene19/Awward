@@ -84,7 +84,7 @@ def register(request):
             username = form.cleaned_data.get('username')
 
             subject = 'Thank you for registering to our site'
-            message = ' it  means a world to us '
+            message = ' it  means the world to us '
             email_from = settings.EMAIL_HOST_USER
             recipient_list = ['daudishuuti@gmail.com',settings.EMAIL_HOST_USER]
 
