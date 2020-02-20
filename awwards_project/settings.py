@@ -52,7 +52,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'f=d_gae)&*jtyf0is9*f$9p!x97yxv$&ihi^-*-@s#rg$om7e4'
+SECRET_KEY = 'w^kpl*=u$7sq(@sx4bfruw=_zkfslrqu^3$eb^7c1zv%l8idb9'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -173,4 +173,3 @@ LOGIN_REDIRECT_URL = '/'
 # my_project/settings.py
 EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
 EMAIL_FILE_PATH = os.path.join(BASE_DIR, "sent_emails")
-
