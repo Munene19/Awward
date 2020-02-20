@@ -48,15 +48,6 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
-# Quick-start development settings - unsuitable for production
-# See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
-
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'w^kpl*=u$7sq(@sx4bfruw=_zkfslrqu^3$eb^7c1zv%l8idb9'
-
-# SECURITY WARNING: don't run with debug turned on in production
-
-ALLOWED_HOSTS = ['*']
 
 
 
@@ -65,6 +56,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'awwardsapp.apps.AwwardsAppConfig',
     'crispy_forms',
+    'pyuploadcare.dj',
     'bootstrap4',
     'rest_framework',
     'django.contrib.admin',
@@ -108,6 +100,12 @@ TEMPLATES = [
 ]
 
 # 'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+UPLOADCARE = {
+    'pub_key': '6cdecf801261e9754011',
+    'secret': 'ab8a67c858c7175b1455',
+}
+
 
 
 WSGI_APPLICATION = 'awwards_project.wsgi.application'

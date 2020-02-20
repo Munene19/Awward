@@ -41,7 +41,7 @@
         <div class="collapse navbar-collapse" id="navbarToggle">
           <div class="navbar-nav mr-auto">
             <a class="nav-item nav-link" href="{% url 'home' %}">Home</a>
-            <a class="nav-item nav-link" href="/admin">Dashboard</a>
+            <!-- <a class="nav-item nav-link" href="/admin">Dashboard</a> -->
           </div>
 
 
@@ -49,7 +49,7 @@
             <form class="navbar-form" role="search" action="{% url 'search_project' %}" method="GET">
 
               <div class="input-group">
-                <input type="text" class="form-control" placeholder="Project Name Like Sports" name="search-project">
+                <input type="text" class="form-control" placeholder="Project Name" name="search-project">
                 <div class="input-group-btn">
                 </div>
               </div>
@@ -89,6 +89,9 @@
 
     <!-- </div> -->
   </main>
+  <script>
+    UPLOADCARE_PUBLIC_KEY = '6cdecf801261e9754011';
+  </script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
