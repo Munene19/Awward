@@ -83,14 +83,14 @@ def register(request):
             form.save()
             username = form.cleaned_data.get('username')
 
-            subject = 'Thank you for registering to our site'
-            message = ' it  means the world to us '
-            email_from = settings.EMAIL_HOST_USER
-            recipient_list = ['daudishuuti@gmail.com',settings.EMAIL_HOST_USER]
+            # subject = 'Thank you for registering to our site'
+            # message = ' it  means the world to us '
+            # email_from = settings.EMAIL_HOST_USER
+            # recipient_list = ['munenevx@gmail.com',settings.EMAIL_HOST_USER]
 
-            send_mail( subject, message, email_from, recipient_list )
+            # send_mail( subject, message, email_from, recipient_list )
 
-            messages.success(request, f'Your account has been created! You are now able to log in')
+            # messages.success(request, f'Your account has been created! You are now able to log in')
             return redirect('login')
     else:
         form = UserRegisterForm()

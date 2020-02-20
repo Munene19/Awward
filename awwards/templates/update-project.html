@@ -7,7 +7,7 @@
         <div class="col-md-2"></div>
         <div class="col-md-8" id="formpro">
             <h5>UPLOAD NEW PROJECTS</h5>
-            <form action="{% url 'newproject' %}" method="POST" enctype="multipart/form-data">
+            <form action="{% url 'project-create' %}" method="POST" enctype="multipart/form-data">
                 {% csrf_token %}
                 {% bootstrap_form uploadform %}
                 <input type="submit" class="btn btn-outline-success" value="Upload">
