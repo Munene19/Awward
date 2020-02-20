@@ -1,5 +1,6 @@
 # Project Title
 *****************
+Awwards
 ## Project Rating App
 This is a web application to share projects. This project is built with Python 3, Django and PSQL Datatbase.
 
@@ -11,7 +12,7 @@ Users can register a new account, log in it, upload new projects and rate/review
 **********************************
 1. Internet connection.
 2. Python 3, Django installation.
-3. Clone it using ***git clone https://github.com/jinka/like_awwards.git***
+3. Clone it using ******
 4. Install Requirements using ***pip install -r requirements.txt***
 5. To start python3.6 manage.py runserver
 6. Go to you browser and writr localhost:8000 or 127.0.0.1:8000
@@ -27,11 +28,12 @@ Users can register a new account, log in it, upload new projects and rate/review
 
 
 # Author information
-My name is Dayud Mohamed Farah, I am one the Moringa Core class MC14.
+Mike munene
 
 # Contact Information
-Dayud Mohamed Farah  Email: voiphandy@gmail.company
+Munenexv@gmail.com
+
 
 # License and Copyright Information
 
-This app is licensed under the terms of MIT, an Copyright by Moringa School core class 14.
+This app is licensed under the terms of MIT.
