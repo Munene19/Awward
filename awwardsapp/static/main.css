@@ -1,5 +1,6 @@
 body {
-  background: rgb(182, 184, 207);
+  background: rgb(220, 234, 236);
+  font-family: 'Dancing Script' ;
 }
 
 ul.topnav {
@@ -7,7 +8,7 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: black;
 }
 
 ul.topnav li {float: left;}
@@ -18,6 +19,8 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Dancing Script', ;
+
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -51,4 +54,10 @@ ul.topnav li.right {float: right;}
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+}
+#top{
+  font-family: 'Dancing Script', ;
+}
+#regform{
+  padding-top: 100px;
 }
